@@ -1,0 +1,446 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+
+.canal-logo{
+    position: fixed;
+    top: 60px;
+    left: 55px;
+}
+.sideNav{
+    position: fixed;
+    right: 0px;
+    display: flex;
+    height: 100%;   
+}
+.menuImage{
+    display: none;
+}
+.sideNav a{
+    width: 60px;
+    padding: 60px 5px;
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+}
+.chinese{
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    padding-top: 16px;  
+}
+.navText{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: black;
+    transform: translateY(-50%) translateX(-50%) rotate(90deg);
+    font-size: 20px;
+    font-family: "ApercuMonoProRegular";
+    font-weight: 500;
+}
+.mainContainer{ 
+    width: calc(100% - 180px);
+}
+.canalMarket-text{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.subContainer{
+    padding: 250px 60px 120px;
+    width: 100%;
+}
+.canalMarket-intro{
+    font-size: 75px;
+    line-height: 86px;
+    font-family: 'Ogg-Regular';
+    letter-spacing: 5px;
+    font-weight: 400;
+
+}
+@font-face{
+    font-family: 'Ogg-Light';
+    src: url('Ogg-Light-BF646c18fc54ff4.ttf')  format('truetype');
+}
+@font-face{
+    font-family: 'Ogg-Regular';
+    src: url('Ogg-Regular-BF646c18fc465e5.ttf')  format('truetype');
+}
+@font-face{
+    font-family: 'ApercuMonoProLight';
+    src: url('ApercuMonoProLight.ttf')  format('truetype');
+}
+@font-face{
+    font-family: 'ApercuMonoProRegular';
+    src: url('ApercuMonoProRegular.ttf')  format('truetype');
+}
+.image-Container{
+    margin-bottom: 60px;
+}
+.marketContainer{
+    padding: 60px;
+}
+.heading{
+    font-family: 'Ogg-Regular';
+    font-size: 113px;
+    max-width: 645px;
+    margin-top: 60px;
+    font-weight: 400;
+}
+.marketPlaces{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 60px;
+}
+.marketPlaces div{
+    /* margin-right: 60px; */
+}
+.marketRow img{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.marketRow p{
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    font-family: "ApercuMonoProLight";
+}
+.homeEvent{
+    padding-top: 60px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.homeEvent-header{
+    /* display: flex;
+    justify-content: space-around; */
+    align-items: center;
+    padding: 60px 0px;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 60px;
+}
+.homeEvent-item h1{
+    font-size: 100px;
+    line-height: 100px;
+    text-align: center;
+    font-family: 'Ogg-Regular';
+    font-weight: 400;
+}
+.homeEvent-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.homeEvent-column2{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 60px;
+    background-image: linear-gradient(90deg, #000 50%, transparent 0), linear-gradient(90deg, #000 50%, transparent 0), linear-gradient(90deg, #000 50%, transparent 0), linear-gradient(90deg, #000 50%, transparent 0);
+    background-position: 0 0, 0 100%, left 14px, 0 calc(100% - 14px);
+    background-repeat: repeat-x, repeat-x, repeat-x, repeat-x;
+    background-size: 24px 1px, 24px 1px, 24px 1px, 24px 1px;
+    animation: .8s infinite normal ;
+    animation-timing-function: linear;
+    padding: 75px 0px 100px;
+}
+.homeEvent-row2{
+    text-align: center;
+}
+.homeEvent-row2 span{
+    font-family: 'ApercuMonoProRegular';
+
+}
+.homeEvent-row2 p{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'ApercuMonoProRegular';
+
+}
+.homeEvent-column3{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 60px;
+    padding-top: 150px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.home-address__text{
+    padding: 90px 30px;
+    background-image: linear-gradient(90deg, #000 50%, transparent 0), linear-gradient(90deg, #000 50%, transparent 0), linear-gradient(180deg, #000 50%, transparent 0), linear-gradient(180deg, #000 50%, transparent 0);
+    background-position: 0 0, 0 100%, 0 0, 100% 0;
+    background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+    background-size: 30px 1px, 30px 1px, 1px 30px, 1px 30px;
+    animation: .4s infinite normal a;
+    animation-timing-function: linear;
+    animation-play-state: paused;
+    text-align: center;
+}
+.home-address__text h3{
+    font-size: 60px;
+    font-weight: 400;
+    font-family: 'Ogg-Regular';
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+footer{
+    padding-top: 60px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.footer-column1{
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: repeating-linear-gradient(-74deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2) 1px, transparent 0, transparent 4px), repeating-linear-gradient(-74deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2) 1px, transparent 0, transparent 4px);
+    background-position: 0 0, 0 100%;
+    background-size: 100% 12px, 100% 12px;
+    animation: none;
+    background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+}
+.footer-column1 h3{
+    font-size: 45px;
+    font-weight: 400;
+    margin-bottom: 25px;
+    text-align: center;
+    font-family: 'Ogg-Regular';
+}
+.footer-column1 button{
+    border: 1px solid black;
+    padding: 15px;
+    background-color: #fff;
+    font-family: "Ogg-Light";
+    font-size: 16px;
+    width: 180px;
+}
+.footer-column1 button:hover{
+    background-color: black;
+    color: #fff;
+}
+.footer-Socialmedia{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 60px;
+}
+.socialmedia-row{
+    padding: 55px;
+    background-image: linear-gradient(90deg, #000 50%, transparent 0), linear-gradient(90deg, #000 50%, transparent 0), linear-gradient(180deg, #000 50%, transparent 0), linear-gradient(180deg, #000 50%, transparent 0);
+    background-position: 0 0, 0 100%, 0 0, 100% 0;
+    background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+    background-size: 30px 1px, 30px 1px, 1px 30px, 1px 30px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.socialmedia-row p{
+    font-size: 14px;
+    text-align: center;
+    font-family: 'ApercuMonoProRegular';
+    font-weight: 400;
+}
+.socialmedia-row img{
+    width: 30px;
+}
+.footer-column2{
+    background-image: linear-gradient(90deg, #000 50%, transparent 0), linear-gradient(90deg, #000 50%, transparent 0), linear-gradient(180deg, #000 50%, transparent 0), linear-gradient(180deg, #000 50%, transparent 0);
+    background-position: 0 0, 0 100%, 0 0, 100% 0;
+    background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+    background-size: 30px 1px, 30px 1px, 1px 30px, 1px 30px;
+    
+}
+.footer-row2{
+    display: flex;
+    padding: 30px 60px;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+.footer-row2 h4{
+    font-size: 22px;
+    font-weight: 400;
+    max-width: 260px;
+    width: 100%;
+    margin-right: 60px;
+}
+.footer-row2 form{
+    max-width: 680px;
+    width: 100%;
+    position: relative;
+}
+.emailInput{
+    width: 100%;
+    padding: 20px 30px;
+}
+.arrowImage{
+    position: absolute;
+    right: 30px;
+    top: 18px;
+}
+.lastFooter{
+    display: flex;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 30px;
+}
+.subMobile-footerRow2{
+    display: none;
+}
+/* Responsiveness */
+@media screen and (max-width: 769px){
+    .sideNav{
+        display: none;
+    }
+    .subContainer{
+        padding: 300px 30px 40px;
+    }
+    .canalMarket-intro{
+        font-size: 35px;
+        line-height: 42px;
+    }
+    .marketContainer{
+        padding: 30px;
+    }
+    .heading{
+        font-size: 60px;
+        line-height: 60px;
+        margin-bottom: 60px;
+    }
+    .marketPlaces{
+        grid-template-columns: 1fr;
+        grid-row-gap: 30px;
+    }
+    .homeEvent{
+        padding: 30px;
+    }
+    .homeEvent-header{
+        grid-template-columns: 1fr;
+        grid-row-gap: 60px;
+    }
+    .homeEvent-item h1{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-size: 60px;
+        line-height: 65px;
+    }
+    .homeEvent-column2{
+        grid-template-columns: 1fr;
+        padding: 0px;
+    }
+    #modileHomeEvent-row2{
+        padding: 60px 20px;
+        background-image: linear-gradient(90deg, #000 50%, transparent 0), linear-gradient(90deg, #000 50%, transparent 0);
+        background-position: 0 100%, 0 calc(100% - 14px);
+        background-repeat: repeat-x, repeat-x;
+        background-size: 24px 1px, 24px 1px;
+    }
+    .homeEvent-row2{
+
+    }
+    #modileEvent-row2{
+        padding: 60px 20px;
+    }
+    #mobileNotDisplay{
+        display: none;
+    }
+    .homeEvent-column3{
+        grid-template-columns: 1fr;
+        padding-top: 60px;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin: 30px 0 0;
+    }
+    .home-address__text{
+        padding: 60px 30px;
+    }
+    .home-address__text h3{
+        font-size: 40px;
+    }
+    footer{
+        padding-top: 30px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .footer-column1{
+        padding: 42px 0px;
+    }
+    .footer-column1 h3{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-size: 24px;
+        line-height: 27px;
+    }
+    .footer-column1 button{
+        width: 100%;
+        margin-top: 25px;
+    }
+    .footer-Socialmedia{
+        grid-template-columns: 1fr;
+        grid-row-gap: 30px;
+    }
+    .socialmedia-row{
+        padding: 30px;
+    }
+    .mainContainer{
+        width: 100%;
+    }
+    .footer-row2{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-row2 h4{
+        display: none;
+    }
+    .subMobile-footerRow2{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .subMobile-footerRow2 img{
+        width: 40px;
+    }
+    .subMobile-footerRow2 p{
+        /* margin-top: 0px; */
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .footer-row2{
+        padding: 30px;
+    }
+    .lastFooter{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        justify-content: space-between;
+        font-size: 10px;
+    }
+    .moveRight{
+        text-align: right;
+    }
+    .menuImage{
+        display: block;
+        position: fixed;
+        right: 25px;
+        top: 24px;
+        width: 50px;
+    }
+    .canal-logo{
+        top: 24px;
+        left: 25px;
+        
+    }
+}
